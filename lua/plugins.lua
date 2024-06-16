@@ -68,6 +68,12 @@ return require('packer').startup(function(use)
         use 'github/copilot.vim'
         use 'lukas-reineke/indent-blankline.nvim'
 
+        use {
+            'nvim-telescope/telescope.nvim', tag = '0.1.6',
+        -- or                            , branch = '0.1.x',
+            requires = { {'nvim-lua/plenary.nvim'} }
+        }
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
