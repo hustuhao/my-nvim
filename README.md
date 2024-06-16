@@ -34,7 +34,7 @@ And then:
 ```shell
 rm -rf ~/.config/nvim/
 cd ~/.config
-git clone git@github.com:here-Leslie-Lau/my-nvim.git
+git clone git@github.com:hustuhao/my-nvim.git
 mv my-nvim nvim
 cd nvim && nvim lua/plugins.lua
 ```
